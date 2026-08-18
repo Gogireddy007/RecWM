@@ -1,0 +1,386 @@
+{
+  "n_snapshots": 2618,
+  "rho_stats_overall": {
+    "mean": 0.6819270642045985,
+    "std": 0.00018620472583861407,
+    "min": 0.681297242641449,
+    "max": 0.6824222207069397
+  },
+  "rho_mean_inside_known_stress_windows": 0.6819086457655682,
+  "rho_mean_outside_known_stress_windows": 0.6819289743799786,
+  "welch_ttest_stat": -1.6290402985189625,
+  "welch_ttest_pvalue": 0.10436107821615348,
+  "known_stress_windows": [
+    [
+      "2018-12-01",
+      "2018-12-24",
+      "Q4 2018 selloff"
+    ],
+    [
+      "2020-02-20",
+      "2020-03-23",
+      "COVID-19 crash"
+    ],
+    [
+      "2022-01-01",
+      "2022-10-15",
+      "2022 rate-hike bear market"
+    ],
+    [
+      "2023-03-08",
+      "2023-03-13",
+      "SVB / regional-bank crisis"
+    ],
+    [
+      "2024-08-05",
+      "2024-08-05",
+      "Yen carry-trade unwind"
+    ],
+    [
+      "2025-04-03",
+      "2025-04-09",
+      "Liberation Day tariff selloff"
+    ]
+  ],
+  "best_lag_vs_known_stress": {
+    "lag_days": -8.0,
+    "pearson_r": -0.07033154796774063
+  },
+  "best_lag_vs_fwd_realized_vol": {
+    "lag_days": -19.0,
+    "pearson_r": -0.14780146593028085
+  },
+  "corr_vs_known_stress_by_lag": [
+    {
+      "lag_days": -20,
+      "pearson_r": -0.0330424222627529
+    },
+    {
+      "lag_days": -19,
+      "pearson_r": -0.03739699961948706
+    },
+    {
+      "lag_days": -18,
+      "pearson_r": -0.040980722667795434
+    },
+    {
+      "lag_days": -17,
+      "pearson_r": -0.049561214709847666
+    },
+    {
+      "lag_days": -16,
+      "pearson_r": -0.05239229415560878
+    },
+    {
+      "lag_days": -15,
+      "pearson_r": -0.05712771058202077
+    },
+    {
+      "lag_days": -14,
+      "pearson_r": -0.05745657742347844
+    },
+    {
+      "lag_days": -13,
+      "pearson_r": -0.057950525138719955
+    },
+    {
+      "lag_days": -12,
+      "pearson_r": -0.06240797546842185
+    },
+    {
+      "lag_days": -11,
+      "pearson_r": -0.06746335303816471
+    },
+    {
+      "lag_days": -10,
+      "pearson_r": -0.06939169812814582
+    },
+    {
+      "lag_days": -9,
+      "pearson_r": -0.06987955905844627
+    },
+    {
+      "lag_days": -8,
+      "pearson_r": -0.07033154796774063
+    },
+    {
+      "lag_days": -7,
+      "pearson_r": -0.06855985818121749
+    },
+    {
+      "lag_days": -6,
+      "pearson_r": -0.06560911216732015
+    },
+    {
+      "lag_days": -5,
+      "pearson_r": -0.06472646141401256
+    },
+    {
+      "lag_days": -4,
+      "pearson_r": -0.0608282699905618
+    },
+    {
+      "lag_days": -3,
+      "pearson_r": -0.057750808166235824
+    },
+    {
+      "lag_days": -2,
+      "pearson_r": -0.05074548365652901
+    },
+    {
+      "lag_days": -1,
+      "pearson_r": -0.044111255668062795
+    },
+    {
+      "lag_days": 0,
+      "pearson_r": -0.031860698488840204
+    },
+    {
+      "lag_days": 1,
+      "pearson_r": -0.021487027038767495
+    },
+    {
+      "lag_days": 2,
+      "pearson_r": -0.01208331873672418
+    },
+    {
+      "lag_days": 3,
+      "pearson_r": -0.0029466383398424867
+    },
+    {
+      "lag_days": 4,
+      "pearson_r": 0.006599361048193735
+    },
+    {
+      "lag_days": 5,
+      "pearson_r": 0.009445179329261593
+    },
+    {
+      "lag_days": 6,
+      "pearson_r": 0.01108712026672783
+    },
+    {
+      "lag_days": 7,
+      "pearson_r": 0.01201952843219461
+    },
+    {
+      "lag_days": 8,
+      "pearson_r": 0.014572020791832903
+    },
+    {
+      "lag_days": 9,
+      "pearson_r": 0.013690570790778258
+    },
+    {
+      "lag_days": 10,
+      "pearson_r": 0.01647859352772141
+    },
+    {
+      "lag_days": 11,
+      "pearson_r": 0.024293426677876394
+    },
+    {
+      "lag_days": 12,
+      "pearson_r": 0.02781511602163893
+    },
+    {
+      "lag_days": 13,
+      "pearson_r": 0.031663284495978335
+    },
+    {
+      "lag_days": 14,
+      "pearson_r": 0.03789480378119992
+    },
+    {
+      "lag_days": 15,
+      "pearson_r": 0.03925230677509166
+    },
+    {
+      "lag_days": 16,
+      "pearson_r": 0.04074909923061066
+    },
+    {
+      "lag_days": 17,
+      "pearson_r": 0.04149392528821891
+    },
+    {
+      "lag_days": 18,
+      "pearson_r": 0.04582554192635
+    },
+    {
+      "lag_days": 19,
+      "pearson_r": 0.046584690180711825
+    },
+    {
+      "lag_days": 20,
+      "pearson_r": 0.047667546281318765
+    }
+  ],
+  "corr_vs_fwd_vol_by_lag": [
+    {
+      "lag_days": -20,
+      "pearson_r": -0.14765171957884196
+    },
+    {
+      "lag_days": -19,
+      "pearson_r": -0.14780146593028085
+    },
+    {
+      "lag_days": -18,
+      "pearson_r": -0.1463095733321926
+    },
+    {
+      "lag_days": -17,
+      "pearson_r": -0.14393522694753588
+    },
+    {
+      "lag_days": -16,
+      "pearson_r": -0.13977999694191828
+    },
+    {
+      "lag_days": -15,
+      "pearson_r": -0.13595752466034078
+    },
+    {
+      "lag_days": -14,
+      "pearson_r": -0.1337146162130525
+    },
+    {
+      "lag_days": -13,
+      "pearson_r": -0.13028797525777872
+    },
+    {
+      "lag_days": -12,
+      "pearson_r": -0.12401179805585846
+    },
+    {
+      "lag_days": -11,
+      "pearson_r": -0.11715641834342394
+    },
+    {
+      "lag_days": -10,
+      "pearson_r": -0.1096969126822074
+    },
+    {
+      "lag_days": -9,
+      "pearson_r": -0.1030623273236032
+    },
+    {
+      "lag_days": -8,
+      "pearson_r": -0.09169263275419992
+    },
+    {
+      "lag_days": -7,
+      "pearson_r": -0.07889933191938654
+    },
+    {
+      "lag_days": -6,
+      "pearson_r": -0.06604286169741982
+    },
+    {
+      "lag_days": -5,
+      "pearson_r": -0.05149484574054852
+    },
+    {
+      "lag_days": -4,
+      "pearson_r": -0.03526022928186414
+    },
+    {
+      "lag_days": -3,
+      "pearson_r": -0.01705259302699667
+    },
+    {
+      "lag_days": -2,
+      "pearson_r": -0.0005352762935438808
+    },
+    {
+      "lag_days": -1,
+      "pearson_r": 0.016668745028610477
+    },
+    {
+      "lag_days": 0,
+      "pearson_r": 0.032928267682046
+    },
+    {
+      "lag_days": 1,
+      "pearson_r": 0.044738712488145295
+    },
+    {
+      "lag_days": 2,
+      "pearson_r": 0.05651643168952847
+    },
+    {
+      "lag_days": 3,
+      "pearson_r": 0.06367603344769325
+    },
+    {
+      "lag_days": 4,
+      "pearson_r": 0.06830933352023356
+    },
+    {
+      "lag_days": 5,
+      "pearson_r": 0.07393825878690248
+    },
+    {
+      "lag_days": 6,
+      "pearson_r": 0.07547989415711776
+    },
+    {
+      "lag_days": 7,
+      "pearson_r": 0.0739141789499461
+    },
+    {
+      "lag_days": 8,
+      "pearson_r": 0.07036030547741652
+    },
+    {
+      "lag_days": 9,
+      "pearson_r": 0.06531093794200131
+    },
+    {
+      "lag_days": 10,
+      "pearson_r": 0.062001360976326435
+    },
+    {
+      "lag_days": 11,
+      "pearson_r": 0.05786307813889567
+    },
+    {
+      "lag_days": 12,
+      "pearson_r": 0.05512230936860862
+    },
+    {
+      "lag_days": 13,
+      "pearson_r": 0.05075582002352969
+    },
+    {
+      "lag_days": 14,
+      "pearson_r": 0.04393351974632844
+    },
+    {
+      "lag_days": 15,
+      "pearson_r": 0.03341299033120405
+    },
+    {
+      "lag_days": 16,
+      "pearson_r": 0.02462638856371544
+    },
+    {
+      "lag_days": 17,
+      "pearson_r": 0.017043691477990005
+    },
+    {
+      "lag_days": 18,
+      "pearson_r": 0.009704532022538964
+    },
+    {
+      "lag_days": 19,
+      "pearson_r": 0.003798458647708215
+    },
+    {
+      "lag_days": 20,
+      "pearson_r": -0.0002832623439979632
+    }
+  ],
+  "config": "contractive"
+}

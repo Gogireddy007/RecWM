@@ -1,0 +1,60 @@
+{
+  "new_real_days": [
+    "2026-08-12"
+  ],
+  "extended_test_range": [
+    "2024-07-10",
+    "2026-08-12"
+  ],
+  "equal_weight_new_day_pnl": 4.2828476580325514e-05,
+  "models": {
+    "untrained_seed42": {
+      "full_extended_test_sharpe": 0.45551641277574445,
+      "full_extended_test_ann_return": 0.023589006415028115,
+      "new_day_pnl": -0.001299397603608668,
+      "new_day_gross_exposure": 0.6852842569351196
+    },
+    "ift_trained": {
+      "full_extended_test_sharpe": 0.5812776632104794,
+      "full_extended_test_ann_return": 0.00024597357993246986,
+      "new_day_pnl": -2.406224397418555e-06,
+      "new_day_gross_exposure": 0.0037210634909570217
+    },
+    "seismograph_trained": {
+      "full_extended_test_sharpe": -0.1663965498917738,
+      "full_extended_test_ann_return": -0.013727603721208865,
+      "new_day_pnl": -0.0016113426722586155,
+      "new_day_gross_exposure": 1.0
+    },
+    "composite_seed0": {
+      "full_extended_test_sharpe": 0.4102660469560027,
+      "full_extended_test_ann_return": 0.04864431010717527,
+      "new_day_pnl": 0.004312304116785526,
+      "new_day_gross_exposure": 0.8554840087890625
+    },
+    "composite_seed1": {
+      "full_extended_test_sharpe": 0.696017215616984,
+      "full_extended_test_ann_return": 0.04252907106433064,
+      "new_day_pnl": 0.002454413926228881,
+      "new_day_gross_exposure": 0.8123939037322998
+    },
+    "composite_seed2": {
+      "full_extended_test_sharpe": 0.16776359167395663,
+      "full_extended_test_ann_return": 0.014279141555982052,
+      "new_day_pnl": 0.004173303324729204,
+      "new_day_gross_exposure": 0.6297932863235474
+    },
+    "composite_seed3": {
+      "full_extended_test_sharpe": 0.3337726664327007,
+      "full_extended_test_ann_return": 0.046064858124386515,
+      "new_day_pnl": 0.005301207177340984,
+      "new_day_gross_exposure": 0.6879922747612
+    },
+    "composite_seed4": {
+      "full_extended_test_sharpe": -0.3569340317350097,
+      "full_extended_test_ann_return": -0.01485334196495823,
+      "new_day_pnl": 0.0021447272971272468,
+      "new_day_gross_exposure": 0.5452810525894165
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "scenario_branching": {
+    "n_dates_tested": 10,
+    "all_converged": true,
+    "sample": [
+      {
+        "date": "2025-06-02",
+        "scenario": "spy_shock",
+        "plausibility": 0.14285714285714285,
+        "impact": 0.020758455619215965,
+        "converged": true
+      },
+      {
+        "date": "2025-06-02",
+        "scenario": "broad_risk_off",
+        "plausibility": 0.1111111111111111,
+        "impact": 0.01905192993581295,
+        "converged": true
+      },
+      {
+        "date": "2025-06-02",
+        "scenario": "broad_risk_on",
+        "plausibility": 0.1111111111111111,
+        "impact": 0.015228215605020523,
+        "converged": true
+      },
+      {
+        "date": "2025-06-02",
+        "scenario": "rate_shock",
+        "plausibility": 0.12973190755680383,
+        "impact": 0.014838648028671741,
+        "converged": true
+      },
+      {
+        "date": "2025-06-02",
+        "scenario": "random_sector_rotation",
+        "plausibility": 0.11978893181812841,
+        "impact": 0.011362222954630852,
+        "converged": true
+      },
+      {
+        "date": "2025-07-21",
+        "scenario": "broad_risk_off",
+        "plausibility": 0.1111111111111111,
+        "impact": 0.02364790253341198,
+        "converged": true
+      },
+      {
+        "date": "2025-07-21",
+        "scenario": "spy_shock",
+        "plausibility": 0.14285714285714285,
+        "impact": 0.019278060644865036,
+        "converged": true
+      },
+      {
+        "date": "2025-07-21",
+        "scenario": "rate_shock",
+        "plausibility": 0.12973190755680383,
+        "impact": 0.018358221277594566,
+        "converged": true
+      },
+      {
+        "date": "2025-07-21",
+        "scenario": "broad_risk_on",
+        "plausibility": 0.1111111111111111,
+        "impact": 0.018156692385673523,
+        "converged": true
+      },
+      {
+        "date": "2025-07-21",
+        "scenario": "random_sector_rotation",
+        "plausibility": 0.11978893181812841,
+        "impact": 0.016002733260393143,
+        "converged": true
+      },
+      {
+        "date": "2025-09-05",
+        "scenario": "broad_risk_off",
+        "plausibility": 0.1111111111111111,
+        "impact": 0.02320271171629429,
+        "converged": true
+      },
+      {
+        "date": "2025-09-05",
+        "scenario": "rate_shock",
+        "plausibility": 0.12973190755680383,
+        "impact": 0.02036680281162262,
+        "converged": true
+      },
+      {
+        "date": "2025-09-05",
+        "scenario": "broad_risk_on",
+        "plausibility": 0.1111111111111111,
+        "impact": 0.018090497702360153,
+        "converged": true
+      },
+      {
+        "date": "2025-09-05",
+        "scenario": "spy_shock",
+        "plausibility": 0.14285714285714285,
+        "impact": 0.017682630568742752,
+        "converged": true
+      },
+      {
+        "date": "2025-09-05",
+        "scenario": "random_sector_rotation",
+        "plausibility": 0.11978893181812841,
+        "impact": 0.015183873474597931,
+        "converged": true
+      }
+    ]
+  },
+  "composition_algebra": {
+    "mean_relative_error": 0.026731196650869746,
+    "median_relative_error": 0.024882326145423295,
+    "max_relative_error": 0.06917198047457582,
+    "mean_speedup_x": 948.6486326460015,
+    "n_pairs_tested": 100
+  },
+  "counterfactual_engine": {
+    "n_interventions_tested": 50,
+    "mean_factual_corr": -0.05741681291957351,
+    "mean_cf_corr": -0.05704007768557319,
+    "sample": [
+      {
+        "date": "2025-06-02",
+        "agent_type": "momentum",
+        "factual_corr": -0.10433297408574303,
+        "cf_corr": -0.09987001586427557
+      },
+      {
+        "date": "2025-06-02",
+        "agent_type": "mean_reversion",
+        "factual_corr": -0.10433297408574303,
+        "cf_corr": -0.09987001586427557
+      },
+      {
+        "date": "2025-06-02",
+        "agent_type": "volatility_targeting",
+        "factual_corr": -0.10433297408574303,
+        "cf_corr": -0.09987001586427557
+      },
+      {
+        "date": "2025-06-02",
+        "agent_type": "carry_macro",
+        "factual_corr": -0.10433297408574303,
+        "cf_corr": -0.09987001586427557
+      },
+      {
+        "date": "2025-06-02",
+        "agent_type": "liquidity_provision",
+        "factual_corr": -0.10433297408574303,
+        "cf_corr": -0.09987001586427557
+      },
+      {
+        "date": "2025-07-21",
+        "agent_type": "momentum",
+        "factual_corr": -0.23127468959309166,
+        "cf_corr": -0.23832638612678864
+      },
+      {
+        "date": "2025-07-21",
+        "agent_type": "mean_reversion",
+        "factual_corr": -0.23127468959309166,
+        "cf_corr": -0.23832638612678864
+      },
+      {
+        "date": "2025-07-21",
+        "agent_type": "volatility_targeting",
+        "factual_corr": -0.23127468959309166,
+        "cf_corr": -0.23832638612678864
+      },
+      {
+        "date": "2025-07-21",
+        "agent_type": "carry_macro",
+        "factual_corr": -0.23127468959309166,
+        "cf_corr": -0.23832638612678864
+      },
+      {
+        "date": "2025-07-21",
+        "agent_type": "liquidity_provision",
+        "factual_corr": -0.23127468959309166,
+        "cf_corr": -0.23832638612678864
+      }
+    ]
+  },
+  "crowding_radar": {
+    "spearman_corr_crowding_vs_fwd_sharpe": -0.07972406091592607,
+    "spearman_pvalue": 1.9878532987375258e-05,
+    "quantile_table": [
+      {
+        "quantile": 0,
+        "fwd_ret": 0.08300425048052365,
+        "fwd_vol": 0.3425204470230812,
+        "fwd_sharpe_like": 0.09971686314760467
+      },
+      {
+        "quantile": 1,
+        "fwd_ret": 0.005263812603915309,
+        "fwd_vol": 0.17309994361213318,
+        "fwd_sharpe_like": 0.055098267364249415
+      },
+      {
+        "quantile": 2,
+        "fwd_ret": 0.0008870934150982244,
+        "fwd_vol": 0.16170887921469074,
+        "fwd_sharpe_like": 0.035088712034712234
+      },
+      {
+        "quantile": 3,
+        "fwd_ret": 0.02315213443498258,
+        "fwd_vol": 0.2184773888150106,
+        "fwd_sharpe_like": 0.04454163960935076
+      },
+      {
+        "quantile": 4,
+        "fwd_ret": -0.01009502699001259,
+        "fwd_vol": 0.23734343924888443,
+        "fwd_sharpe_like": 0.019615753518141175
+      }
+    ]
+  },
+  "execution_camouflage": {
+    "twap_detectability": 0.19999999998080004,
+    "randomized_detectability_mean": 0.02477623564765029,
+    "randomized_detectability_p90": 0.030465856523898896,
+    "reduction_factor": 8.07225128244078,
+    "n_trials": 300
+  }
+}

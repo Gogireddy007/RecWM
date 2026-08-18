@@ -1,0 +1,135 @@
+{
+  "loss_kwargs": {
+    "sharpe_weight": 1.0,
+    "drawdown_weight": 0.15,
+    "turnover_weight": 0.08,
+    "concentration_weight": 0.05,
+    "l2_weight": 0.01
+  },
+  "benchmark_equal_weight_test": {
+    "sharpe": 1.5729190714105614,
+    "ann_return": 0.18071193336005395,
+    "ann_vol": 0.11488953032910665,
+    "max_drawdown": -0.13044447993547692,
+    "hit_rate": 0.5515267175572519,
+    "avg_daily_turnover": 0.0
+  },
+  "seed_results": [
+    {
+      "seed": 0,
+      "train_time_s": 498.83803486824036,
+      "final_epoch_loss": -0.2393985147587955,
+      "final_epoch_window_sharpe": 0.2657973797339946,
+      "test": {
+        "sharpe": 0.3932014665908269,
+        "ann_return": 0.0466518963772994,
+        "ann_vol": 0.1186462929087858,
+        "max_drawdown": -0.12525142715126275,
+        "hit_rate": 0.5515267175572519,
+        "avg_daily_turnover": 0.08423860014402058
+      },
+      "train_in_sample": {
+        "sharpe": 1.2499615230370065,
+        "ann_return": 0.15058821191532668,
+        "ann_vol": 0.12047427791972788,
+        "max_drawdown": -0.38285755048505943,
+        "hit_rate": 0.5893027698185291,
+        "avg_daily_turnover": 0.08886706459788746
+      }
+    },
+    {
+      "seed": 1,
+      "train_time_s": 253.73669719696045,
+      "final_epoch_loss": -0.3046045445930213,
+      "final_epoch_window_sharpe": 0.32616664399858564,
+      "test": {
+        "sharpe": 0.6774765112273201,
+        "ann_return": 0.04142172813478623,
+        "ann_vol": 0.061141201869488286,
+        "max_drawdown": -0.05565688454918565,
+        "hit_rate": 0.5400763358778626,
+        "avg_daily_turnover": 0.0720047966296294
+      },
+      "train_in_sample": {
+        "sharpe": 2.4065988473466597,
+        "ann_return": 0.1817100584857025,
+        "ann_vol": 0.07550492209619512,
+        "max_drawdown": -0.16382026943843803,
+        "hit_rate": 0.6088825214899714,
+        "avg_daily_turnover": 0.07530867990992302
+      }
+    },
+    {
+      "seed": 2,
+      "train_time_s": 3203.3133051395416,
+      "final_epoch_loss": -0.2494567338936031,
+      "final_epoch_window_sharpe": 0.2755987486198137,
+      "test": {
+        "sharpe": 0.14432148990181282,
+        "ann_return": 0.012288670786108477,
+        "ann_vol": 0.08514789304398748,
+        "max_drawdown": -0.09180986119573935,
+        "hit_rate": 0.5400763358778626,
+        "avg_daily_turnover": 0.08705241415793895
+      },
+      "train_in_sample": {
+        "sharpe": 3.021463160516904,
+        "ann_return": 0.20857577552740098,
+        "ann_vol": 0.06903138130326182,
+        "max_drawdown": -0.10057096156990164,
+        "hit_rate": 0.6198662846227316,
+        "avg_daily_turnover": 0.09225590079720376
+      }
+    },
+    {
+      "seed": 3,
+      "train_time_s": 234.45871424674988,
+      "final_epoch_loss": -0.31371495619416234,
+      "final_epoch_window_sharpe": 0.33869878340512516,
+      "test": {
+        "sharpe": 0.31563463626976007,
+        "ann_return": 0.043588708241541284,
+        "ann_vol": 0.1380986217377227,
+        "max_drawdown": -0.14674244741303846,
+        "hit_rate": 0.5591603053435115,
+        "avg_daily_turnover": 0.09453980764107536
+      },
+      "train_in_sample": {
+        "sharpe": 1.8035095956263147,
+        "ann_return": 0.18965033997746017,
+        "ann_vol": 0.10515626888671986,
+        "max_drawdown": -0.25146326300501814,
+        "hit_rate": 0.610792741165234,
+        "avg_daily_turnover": 0.09737080416218276
+      }
+    },
+    {
+      "seed": 4,
+      "train_time_s": 225.01923513412476,
+      "final_epoch_loss": -0.6051488725841045,
+      "final_epoch_window_sharpe": 0.634536911547184,
+      "test": {
+        "sharpe": -0.38264838428722847,
+        "ann_return": -0.01592780023660352,
+        "ann_vol": 0.041625160044181944,
+        "max_drawdown": -0.06524984817631774,
+        "hit_rate": 0.4961832061068702,
+        "avg_daily_turnover": 0.18082647517239958
+      },
+      "train_in_sample": {
+        "sharpe": 7.340838581501169,
+        "ann_return": 0.22603474035979496,
+        "ann_vol": 0.030791405893244948,
+        "max_drawdown": -0.04015607368014751,
+        "hit_rate": 0.720152817574021,
+        "avg_daily_turnover": 0.17476343200519795
+      }
+    }
+  ],
+  "test_sharpe_mean": 0.22959714394049832,
+  "test_sharpe_std": 0.3512495625973072,
+  "test_sharpe_ttest_stat": 1.3073163265613614,
+  "test_sharpe_ttest_pvalue": 0.2611874283833313,
+  "fraction_seeds_beating_buyhold": 0.0,
+  "fraction_seeds_positive_sharpe": 0.8
+}

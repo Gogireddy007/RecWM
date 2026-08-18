@@ -1,0 +1,35 @@
+{
+  "contractive": {
+    "n_dates_tested": 482,
+    "n_stress_dates_tested": 246,
+    "max_equilibria_found_anywhere": 1,
+    "dates_with_multiplicity": [],
+    "fraction_dates_with_multiplicity": 0.0,
+    "mean_equilibria_count": 1.0,
+    "mean_equilibria_count_in_stress_windows": 1.0,
+    "time_s": 33.06346583366394,
+    "n_searches_run": 7712
+  },
+  "sensitive": {
+    "n_dates_tested": 482,
+    "n_stress_dates_tested": 246,
+    "max_equilibria_found_anywhere": 1,
+    "dates_with_multiplicity": [],
+    "fraction_dates_with_multiplicity": 0.0,
+    "mean_equilibria_count": 1.0,
+    "mean_equilibria_count_in_stress_windows": 1.0,
+    "time_s": 57.40619897842407,
+    "n_searches_run": 7712
+  },
+  "sensitive_leaky_relu": {
+    "n_dates_tested": 482,
+    "n_stress_dates_tested": 246,
+    "max_equilibria_found_anywhere": 1,
+    "dates_with_multiplicity": [],
+    "fraction_dates_with_multiplicity": 0.0,
+    "mean_equilibria_count": 1.0,
+    "mean_equilibria_count_in_stress_windows": 1.0,
+    "time_s": 76.6123399734497,
+    "n_searches_run": 7712
+  }
+}

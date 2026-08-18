@@ -1,0 +1,66 @@
+{
+  "n_snapshots_total": 2618,
+  "n_train": 2094,
+  "n_test": 524,
+  "train_date_range": [
+    "2016-03-14",
+    "2024-07-09"
+  ],
+  "test_date_range": [
+    "2024-07-10",
+    "2026-08-11"
+  ],
+  "ground_truth_convergence_rate_train": 1.0,
+  "ground_truth_convergence_rate_test": 1.0,
+  "atlas_final_train_mse": 0.00010270675556967035,
+  "atlas_warm_start_test_mse": 0.0002611671225167811,
+  "fixed_point_mean_norm_test": 0.288486510515213,
+  "iterations": {
+    "zero_init": {
+      "mean": 18.0,
+      "p50": 18.0,
+      "p90": 18.0,
+      "p99": 18.0,
+      "max": 18.0
+    },
+    "random_init": {
+      "mean": 19.479007633587788,
+      "p50": 19.0,
+      "p90": 20.0,
+      "p99": 20.0,
+      "max": 21.0
+    },
+    "trained_warm_start": {
+      "mean": 16.112595419847327,
+      "p50": 16.0,
+      "p90": 17.0,
+      "p99": 18.0,
+      "max": 18.0
+    }
+  },
+  "latency_ms": {
+    "zero_init": {
+      "mean": 4.202342961851187,
+      "p50": 4.18504200206371,
+      "p90": 4.385095400357386,
+      "p99": 4.571559088799404,
+      "max": 5.0977499995497055
+    },
+    "random_init": {
+      "mean": 4.567906589810812,
+      "p50": 4.539958499663044,
+      "p90": 4.8076963030325714,
+      "p99": 5.109970160046942,
+      "max": 6.107165994762909
+    },
+    "trained_warm_start": {
+      "mean": 3.7557869601527316,
+      "p50": 3.7276250004651956,
+      "p90": 4.052358097396791,
+      "p99": 4.302860180032439,
+      "max": 5.214542004978284
+    }
+  },
+  "speedup_iterations_trained_vs_zero": 1.1171384578941135,
+  "speedup_latency_trained_vs_zero": 1.1188981181404112
+}

@@ -1,0 +1,24 @@
+{
+  "n_pairs": 100,
+  "mean_relative_error": 0.026731196650869746,
+  "median_relative_error": 0.024882326145423295,
+  "max_relative_error": 0.06917198047457582,
+  "compose_time_us": {
+    "mean": 1.844399395486107,
+    "median": 1.8399270011286717,
+    "std": 0.027057372627714973
+  },
+  "ground_truth_time_ms": {
+    "mean": 4.2674402489865315,
+    "median": 4.677553125111444,
+    "std": 1.3734256659375832
+  },
+  "speedup": {
+    "mean": 2316.0789271216713,
+    "median": 2541.4411751602847,
+    "min": 93.33180436249425,
+    "max": 2852.795740918847,
+    "std": 745.445299734766
+  },
+  "note": "timing_reps=2000 for compose, ~20 for ground truth solve, to average out Python/timer call overhead noise present in the original single-call measurement (which ranged 42x-1301x for a mechanically identical operation)"
+}
