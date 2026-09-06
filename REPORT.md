@@ -378,3 +378,27 @@ Full regime and sub-period tables for every model: [`results/comparison_and_pres
 ## Updated bottom line
 
 REN is not the worst model tested, and it is not competitive with the best. It beats two of six real standard baselines, loses to four (including the two simplest — buy-and-hold and risk parity), and its one apparent strength (positive Sharpe) is both statistically less secure than the winners' (bootstrap CI crosses zero) and inconsistent across the two REN variants' regime behavior and across calendar sub-periods. That is a precise, real, falsifiable characterization of where this architecture currently stands against the market models it would actually have to compete with — not a verdict of "broken," but clearly not yet "better."
+
+---
+
+# v7 — Ablation study: does each component actually contribute?
+
+The one experiment missing from every prior round: does REN's architectural complexity earn its keep, or would a simpler version do just as well? Three arms, same real data, same composite loss (Sharpe + drawdown + turnover + concentration penalties), same training protocol as the main composite-trained result — only one component removed per arm.
+
+| Arm | What's removed | Seeds | Mean Sharpe | Std | Beat buy-and-hold |
+|---|---|---|---|---|---|
+| **A. Full REN** | — (baseline) | 5 | **+0.231** | 0.359 | 0/5 |
+| B. No Influence Kernel | resolvent consensus replaced with plain unweighted mean | 3 | −0.114 | 0.280 | 0/3 |
+| C. No Equilibrium | single application of Φ per day, no Anderson iteration to convergence | 3 | −0.073 | 0.451 | 0/3 |
+
+**Scope disclosed up front:** arms B and C use 3 seeds, not 5 (bounding compute given the original sweep's run-time variance, 10s–3200s per seed). That matters for what follows.
+
+**The honest reading, both halves of it:**
+
+1. **Direction:** removing either component makes the mean Sharpe *worse*, not better — full REN (+0.23) outperforms both the no-influence-kernel (−0.11) and no-equilibrium (−0.07) ablations on average. That's a real, useful signal that the Influence Kernel and the equilibrium-solving machinery are each doing something, not dead weight bolted on for complexity's sake. If the ablations had come out *better* than the full model, that would have been a much more damaging finding — they didn't.
+
+2. **But neither difference is statistically significant at this sample size.** Welch's t-test: full vs. no-influence-kernel, t=1.29, p=0.25; full vs. no-equilibrium, t=0.83, p=0.46. With 3-5 seeds per arm, a p-value this high means the data cannot rule out "these are all draws from the same noisy distribution" — which is consistent with everything else in this report about seed-to-seed variance being large relative to any effect size found so far.
+
+**Net effect on the overall picture:** this is genuine evidence *for* the architecture's internal design logic (the added machinery isn't obviously useless) sitting alongside continued evidence *against* a trading edge (none of the three arms beats buy-and-hold, ever). Both things are true at once, and reporting only one half would misrepresent the finding. A properly powered version of this ablation (10+ seeds per arm) is the natural next step if the direction found here is worth confirming rigorously before it's used to argue for keeping either component.
+
+Raw data: [`results/ablation_study_report.json`](results/ablation_study_report.json). Checkpoints: `results/ablation_no_influence_kernel_seed{0-2}.pt`, `results/ablation_no_equilibrium_seed{0-2}.pt`.

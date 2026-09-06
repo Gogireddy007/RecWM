@@ -28,7 +28,12 @@ class SnapshotDataset:
 
 
 def build_snapshot_dataset(panel: pd.DataFrame, tickers: list[str],
-                             kernel_fit_lookback=750, min_history=300) -> SnapshotDataset:
+                             kernel_fit_lookback=750, min_history=300,
+                             use_influence_kernel: bool = True) -> SnapshotDataset:
+    """use_influence_kernel=False is the Invention-1 ablation arm: agg_belief
+    is the plain unweighted mean of the raw belief matrix, bypassing the
+    resolvent K*(s) consensus entirely, so the effect of the Influence
+    Kernel on downstream trading performance can be isolated."""
     hist = HistoryCache(panel, tickers)
     dates = hist.valid_dates(min_history=min_history)
     # Bug found and fixed: the last date in any panel has an undefined
@@ -57,8 +62,11 @@ def build_snapshot_dataset(panel: pd.DataFrame, tickers: list[str],
     rows = []
     for d in dates:
         b = hist.belief_matrix(d, "medium")             # (5, 16)
-        consensus = kernel_result.K_star @ b              # (5, 16)
-        agg_belief = consensus.mean(axis=0)                # (16,)
+        if use_influence_kernel:
+            consensus = kernel_result.K_star @ b           # (5, 16)
+            agg_belief = consensus.mean(axis=0)             # (16,)
+        else:
+            agg_belief = b.mean(axis=0)                     # (16,) -- no resolvent
         constraint = hist.constraint_vector(d)             # (16,)
         rows.append(np.concatenate([agg_belief, constraint]))
 

@@ -1,0 +1,116 @@
+{
+  "benchmark_buyhold": {
+    "sharpe": 1.6079536433550985,
+    "ann_return": 0.18495589675881535,
+    "ann_vol": 0.11502563990146694,
+    "max_drawdown": -0.13044447993547692,
+    "avg_daily_turnover": 0.0
+  },
+  "arms": {
+    "A_full_ren": [
+      {
+        "seed": 0,
+        "train_time_s": null,
+        "sharpe": 0.3978186398862884,
+        "ann_return": 0.047198604018633614,
+        "ann_vol": 0.11864352065585654,
+        "max_drawdown": -0.12525142715126275,
+        "avg_daily_turnover": 0.08447375145735475
+      },
+      {
+        "seed": 1,
+        "train_time_s": null,
+        "sharpe": 0.6931312548001615,
+        "ann_return": 0.04237623415616312,
+        "ann_vol": 0.061137387562159105,
+        "max_drawdown": -0.059816179141635076,
+        "avg_daily_turnover": 0.07234045007543369
+      },
+      {
+        "seed": 2,
+        "train_time_s": null,
+        "sharpe": 0.14952705310413492,
+        "ann_return": 0.012731844208856409,
+        "ann_vol": 0.08514742947545142,
+        "max_drawdown": -0.09226766354730352,
+        "avg_daily_turnover": 0.08709992300621269
+      },
+      {
+        "seed": 3,
+        "train_time_s": null,
+        "sharpe": 0.30686839760795986,
+        "ann_return": 0.04238349359021311,
+        "ann_vol": 0.13811618896110703,
+        "max_drawdown": -0.14674244741303846,
+        "avg_daily_turnover": 0.09474953832922375
+      },
+      {
+        "seed": 4,
+        "train_time_s": null,
+        "sharpe": -0.39260591624790503,
+        "ann_return": -0.01634380176366362,
+        "ann_vol": 0.04162902566486944,
+        "max_drawdown": -0.06524985058006132,
+        "avg_daily_turnover": 0.18096749574827556
+      }
+    ],
+    "B_no_influence_kernel": [
+      {
+        "seed": 0,
+        "train_time_s": 246.36419200897217,
+        "sharpe": -0.3166117073902868,
+        "ann_return": -0.01875770196621584,
+        "ann_vol": 0.05924513063913094,
+        "max_drawdown": -0.08143247964116745,
+        "avg_daily_turnover": 0.10946479173840817
+      },
+      {
+        "seed": 1,
+        "train_time_s": 235.54883408546448,
+        "sharpe": 0.28194895292934,
+        "ann_return": 0.018346980269976977,
+        "ann_vol": 0.06507199292410552,
+        "max_drawdown": -0.07103566101798788,
+        "avg_daily_turnover": 0.10655894058530808
+      },
+      {
+        "seed": 2,
+        "train_time_s": 231.81740403175354,
+        "sharpe": -0.30713711183636355,
+        "ann_return": -0.01689417798363715,
+        "ann_vol": 0.05500532932222801,
+        "max_drawdown": -0.07175352681148796,
+        "avg_daily_turnover": 0.11458109727041361
+      }
+    ],
+    "C_no_equilibrium": [
+      {
+        "seed": 0,
+        "train_time_s": 117.02747893333435,
+        "sharpe": -0.22554874433162658,
+        "ann_return": -0.02456311009606019,
+        "ann_vol": 0.1089037767372573,
+        "max_drawdown": -0.13352989705512297,
+        "avg_daily_turnover": 0.08685007392258191
+      },
+      {
+        "seed": 1,
+        "train_time_s": 112.74893522262573,
+        "sharpe": 0.5392580239640482,
+        "ann_return": 0.03813942261782046,
+        "ann_vol": 0.07072573966996396,
+        "max_drawdown": -0.08385561223328114,
+        "avg_daily_turnover": 0.06594032108864147
+      },
+      {
+        "seed": 2,
+        "train_time_s": 117.18690299987793,
+        "sharpe": -0.5336446459849074,
+        "ann_return": -0.0711692603119484,
+        "ann_vol": 0.13336451671991706,
+        "max_drawdown": -0.23407594614574911,
+        "avg_daily_turnover": 0.11388959627536761
+      }
+    ]
+  }
+}
