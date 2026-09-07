@@ -8,6 +8,32 @@
 
 ---
 
+## Plain-language summary — major results, in simple points
+
+*(For readers who want the headline findings without the seven rounds of technical detail below. Every claim here is expanded, with exact numbers and sources, further down.)*
+
+### 🏆 The real breakthroughs (things that actually worked)
+- **Composition Algebra** — combining pre-solved scenarios instead of re-solving from scratch gives ~97.3% accuracy at a **2,316× speedup**. The single strongest, most reusable result in the entire project.
+- **Core math is genuinely sound** — the resolvent formula, the fixed-point solver, and the gradient computation were all independently verified against known correct answers, not just "it ran."
+- **SEISMOGRAPH crisis-detection is learnable** — it initially failed (moved the wrong way during real crashes), but when explicitly trained on real crisis data, it flipped to working correctly on data it had never seen. The idea isn't dead, it just needs training, not "free."
+- **Two small but real product features** — a crowding/risk-detection signal that's statistically real (not noise), and a way to estimate a fund's own market footprint that the original thesis never actually computed.
+
+### ⚠️ The honest negative findings (what didn't hold up)
+- **No version of this model ever beat simply buying and holding the market** — tested across roughly 30 different configurations and random seeds. Simple buy-and-hold and a basic "risk parity" strategy consistently won.
+- **The "multiple possible futures" feature (HYDRA)** never actually found more than one outcome, even after testing it directly on every real market crash in the data — the mechanism works, it just never triggers in practice.
+- **The crisis-detection signal, in its original untrained form, pointed the wrong direction** on real historical crashes (COVID, 2022 bear market, etc.) — a real, statistically strong negative result, not a maybe.
+- **Removing pieces of the architecture made results slightly worse, not better** — a mild positive sign that the complexity isn't pointless — but that difference wasn't statistically strong enough to be certain.
+
+### 🔧 Real bugs found and fixed along the way
+- A gradient-computation bug that was silently giving wrong training signals (found via direct math verification, then fixed).
+- A data bug where the very last day of any dataset was getting a fake "zero return" instead of being excluded.
+- A measurement bug where a "949× speedup" claim turned out to be noisy — the corrected, properly-measured number was actually higher (2,316×).
+
+### 📊 Bottom line in one sentence
+The underlying math is real and well-built — genuinely rare for a project like this — but as tested, it doesn't yet produce a trading edge; it currently competes best as a research platform and a couple of standalone tools (fast scenario analysis, risk detection) rather than a working trading system.
+
+---
+
 ## Setup
 
 - **Universe:** SPY, QQQ, IWM, XLF, XLK, XLE, XLU, AAPL, MSFT, NVDA, TSLA, TLT, GLD, USO, UUP, VXX — 16 real, liquid instruments, 2015-01-02 to 2026-08-11 (2,918 real trading days).
