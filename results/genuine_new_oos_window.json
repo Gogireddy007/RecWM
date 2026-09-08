@@ -1,0 +1,72 @@
+{
+  "window": [
+    "2026-08-12",
+    "2026-09-03"
+  ],
+  "n_days": 17,
+  "models": {
+    "Equal_weight_buyhold": {
+      "n": 17,
+      "mean_daily_pnl": 0.0008414428768232671,
+      "total_pnl": 0.01430452890599554,
+      "positive_day_rate": 0.47058823529411764,
+      "annualized_sharpe_of_window": 2.7528923933809164
+    },
+    "REN_untrained": {
+      "n": 17,
+      "mean_daily_pnl": 0.00044083200118449683,
+      "total_pnl": 0.007494144020136446,
+      "positive_day_rate": 0.5882352941176471,
+      "annualized_sharpe_of_window": 3.610640031706143
+    },
+    "REN_ift_trained": {
+      "n": 17,
+      "mean_daily_pnl": 2.4518562096786543e-06,
+      "total_pnl": 4.168155556453712e-05,
+      "positive_day_rate": 0.6470588235294118,
+      "annualized_sharpe_of_window": 2.456602855966144
+    },
+    "REN_seismograph_trained": {
+      "n": 17,
+      "mean_daily_pnl": 0.0008351552407805094,
+      "total_pnl": 0.01419763909326866,
+      "positive_day_rate": 0.5882352941176471,
+      "annualized_sharpe_of_window": 4.054154600198172
+    },
+    "REN_composite_seed0": {
+      "n": 17,
+      "mean_daily_pnl": 0.0007493842744871098,
+      "total_pnl": 0.012739532666280867,
+      "positive_day_rate": 0.5294117647058824,
+      "annualized_sharpe_of_window": 5.125446910388031
+    },
+    "REN_composite_seed1": {
+      "n": 17,
+      "mean_daily_pnl": 0.00047041197729242207,
+      "total_pnl": 0.007997003613971175,
+      "positive_day_rate": 0.5882352941176471,
+      "annualized_sharpe_of_window": 2.63221245191779
+    },
+    "REN_composite_seed2": {
+      "n": 17,
+      "mean_daily_pnl": -3.33285041646484e-05,
+      "total_pnl": -0.0005665845707990228,
+      "positive_day_rate": 0.6470588235294118,
+      "annualized_sharpe_of_window": -0.22838757664032136
+    },
+    "REN_composite_seed3": {
+      "n": 17,
+      "mean_daily_pnl": -0.000336484956472893,
+      "total_pnl": -0.0057202442600391805,
+      "positive_day_rate": 0.35294117647058826,
+      "annualized_sharpe_of_window": -2.04477939152358
+    },
+    "REN_composite_seed4": {
+      "n": 17,
+      "mean_daily_pnl": 0.00020422504298553304,
+      "total_pnl": 0.0034718257307540614,
+      "positive_day_rate": 0.5882352941176471,
+      "annualized_sharpe_of_window": 1.3766323512188419
+    }
+  }
+}
